@@ -24,7 +24,7 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "A fresher and a 3rd year student pursuing B.E/B.Tech in Electronics and Communication Degree at the U.I.E.T, Kurukshetra University, Kurukshetra with a passion for innovation and technology in DevSecOps and Generative AI.";
+  "Hi! I’m an ECE graduate who has transitioned from studying circuits to securing the cloud. My journey in tech is driven by a fascination with how things work—and how to make them work better through DevSecOps & Generative AI.";
 
 /**
  * List of some of skills or technologies you work on, are learning,

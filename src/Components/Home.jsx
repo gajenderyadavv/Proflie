@@ -49,9 +49,7 @@ const Home = ({ name, title }) => {
         
 
       </div>
-      <div className="home-arrow">
-        <img src={arrowSvg} alt="Scroll Down" />
-      </div>
+      
     </section>
   );
 };
