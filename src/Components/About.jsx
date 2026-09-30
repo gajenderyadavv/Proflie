@@ -6,69 +6,90 @@
 
 import React from "react";
 import '../styles/about.css'
-/**
- * About background image
- *
- * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
- * represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a image you
- * freely use on your site.
- */
-
 
 const imageAltText = "purple and blue abstract background";
 
 /**
- * Sort description that expands on your title on the Home component.
+ * Short description that expands on your title on the Home component.
  */
 const description =
-  "Hi! I’m an ECE graduate who has transitioned from studying circuits to securing the cloud. My journey in tech is driven by a fascination with how things work—and how to make them work better through DevSecOps & Generative AI.";
+  "Hi! I'm an MBA student at IIT Roorkee and an Electronics & Communication engineer from UIET, Kurukshetra University. I moved from studying circuits to building and securing cloud systems, and now I combine product thinking, data analytics and cloud with a focus on tech consulting, AI & data governance and digital transformation.";
 
 /**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
+ * List of skills or technologies you work on, are learning,
+ * passionate about, or enjoy. (Also shown on the Home component.)
  */
 export const skillsList = [
-  "Cloud Architectures",
-  "System Administration",
-  "Automation",
-  "Containerisation",
-  "Microservices",
-  "Generative AI",
+  "Product Management",
+  "Business Analytics",
+  "Cloud Computing",
+  "Data Governance",
+  "SQL & Excel",
+  "Problem Solving",
 ];
 
-// const skillsList2 = [
-//   "Cloud Architectures",
-//   "System Administration",
-//   "Automation",
-//   "Containerisation",
-//   "Microservices",
-//   "Generative AI",
-// ];
+/**
+ * Education (from CV)
+ */
+const educationList = [
+  "MBA, Indian Institute of Technology, Roorkee (2026 - 2028)",
+  "B.Tech (EC&C), UIET, Kurukshetra University (2021 - 2025), 68.30%",
+];
 
+/**
+ * Certifications (from CV)
+ */
+const certificationList = [
+  "Oracle Database SQL Certified Associate 1Z0-071 (Udemy), 2026",
+  "Microsoft Excel: Beginner to Advanced + AI (Udemy), 2026",
+];
+
+/**
+ * Positions of responsibility (from CV)
+ */
+const leadershipList = [
+  "Microsoft Learn Student Ambassador (Beta), Sep '23 - Jul '25: sessions on Azure, AKS and cloud infra optimization for 450+ students; global community of 4000+ students",
+  "Incubation Head, Community Incubation Centre, Feb '24 - Oct '24: managed incubation and pre-incubation of startups, negotiated a key MoU with I Cell, NIT Kurukshetra, and managed 15+ events for 700+ students",
+  "Led a team of 35+ for the University's techno-cultural event for 2500+ students (2025)",
+  "1st position in Problem Identifying & Solving for Govt. Institutes among 45+ teams (2023)",
+];
 
 /**
  * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
+ * how you best work, or even a quote.
  */
 const detailOrQuote =
-  "Let's connect for discussions on technology, innovation, and professional growth.              Let's 🌱🚀 #TechInnovation #DevSecOps #CloudArchitecture";
+  "Let's connect for discussions on technology, innovation, and professional growth.              Let's 🌱🚀 #TechConsulting #DataGovernance #CloudStrategy";
 
 const About = () => {
   return (
     <section className="padding" id="about">
-      {/* <img className="background" src={image} alt={imageAltText} /> */}
       <div className="about-container">
-        <h2 style={{textAlign:'center'}}>About Myself</h2>
+        <h2 style={{ textAlign: "center" }}>About Myself</h2>
         <p className="large">{description}</p>
-        {/* <ul>
-          {skillsList2.map((skill) => (
-            <li key={skill}>{skill}</li>
+
+        <hr />
+        <h3>Education</h3>
+        <ul>
+          {educationList.map((item) => (
+            <li key={item}>{item}</li>
           ))}
-        </ul> */}
+        </ul>
+
+        <h3>Certifications</h3>
+        <ul>
+          {certificationList.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+
+        <h3>Positions of Responsibility &amp; Achievements</h3>
+        <ul>
+          {leadershipList.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+
         <hr />
         <p className="large">{detailOrQuote}</p>
       </div>
